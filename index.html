@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To do app with vanilla javascript</title>
+    <style>
+        body {
+            background-color: #282C34;
+        }
+
+        .container {
+            width: fit-content;
+            background: tomato;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .todoItems {
+            padding: 0px 20px;
+        }
+
+        .todoItems ul {
+            list-style: none;
+            margin-left: -44px;
+        }
+
+        .completedTodo {
+            padding: 0px 20px;
+        }
+
+        .completedTodo ul {
+            list-style: none;
+            margin-left: -39px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input#todotext {
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        label {
+            font-size: 25px;
+        }
+
+        .main_container {
+            display: grid;
+            place-items: center;
+        }
+
+        h1 {
+            color: tomato;
+            font-family: arialblack;
+        }
+
+        h3 {
+            color: rgb(0, 30, 255);
+            border-bottom: 2px solid black;
+        }
+        li{
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="main_container">
+        <h1>TODO APP</h1>
+
+        <form>
+            <input type="text" id="todotext" placeholder="Write Your todo">
+
+            <button id="addBtn" type="submit">ADD</button> <br>
+        </form>
+
+
+        <div class="container">
+            <div class="todoItems">
+                <h3>Uncompleted Todo</h3>
+                <ul id="items">
+                    <!-- <li><input type="checkbox" id="checkbox" /> <label>todo 1</label></li> -->
+                </ul>
+            </div>
+
+            <div class="completedTodo">
+                <h3>Completed Todo</h3>
+                <ul id="completedTodo">
+                    <!-- <li> <label>todo 1</label> <button type="button" id="delete">Delete</button></li> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="apps.js"></script>
+</body>
+
+</html>
